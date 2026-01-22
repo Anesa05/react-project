@@ -1,0 +1,159 @@
+  body {
+        margin: 0;
+        font-family: "Poppins", sans-serif;
+        background: #faf0e4;
+        color: #4b2e23;
+        padding:0px 20px;
+      }
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background:  linear-gradient(90deg, #8c6a5b, #a6785b);
+        backdrop-filter: blur(5px);
+        padding: 0px 20px;
+        margin-bottom: 30px;
+        border-bottom: 3px solid #ddb7a0;
+        border-radius: 8px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 97.39%;
+        z-index: 1000;
+      }
+      .navbar .logo {
+        font-family: "Pacifico", cursive;
+        font-size: 24px;
+        color: #fff5f0;
+      }
+      .nav-links {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+      }
+      .nav-links li a.active {
+        color: #c89f8d;
+        font-weight: 600;
+      }
+      .nav-links li a {
+        text-decoration: none;
+        color: #fff5f0;
+        font-weight: 500;
+        transition: color 0.3s ease;
+      }
+      .nav-links li a:hover {
+        color: #c89f8d;
+      }
+       #nav-card img {
+    width: 22.5px; 
+    height: 20px;
+}
+    
+    .hero {
+      background: #fff; 
+      border:5px solid #8c6a5b,;
+      border-radius: 12px;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 1rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    }
+    .hero h1 {
+      margin-bottom: 1rem;
+      font-size: 2rem;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin-top: 2rem;
+    }
+    .card {
+      background: #fff;
+      border-radius: 10px;
+      padding: 1rem;
+      box-shadow: 0 6px 16px rgba(0,0,0,0.06);
+      text-align: center;
+    }
+    .card img {
+      width: 180px;
+      height: 200px;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+    .card h3 {
+      margin-bottom: 0.5rem;
+      color: #ff6f61;
+    }
+    .card p {
+      font-size: 0.9rem;
+      color: #555;
+      margin-bottom: 1rem;
+    } 
+    
+    
+     .btn{ 
+      display: inline-block;  
+      height: 20px;
+      width: 82px;
+      padding: 0.3rem 0.6rem;
+      background: #9e7868; 
+      text-decoration: none;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-weight: 500;
+      font-size: 12px;
+    }
+    .btn:hover {
+      background: #694846;
+    }
+    
+    .footer {
+        width: 98%;
+        padding: 40px 20px;
+        background: linear-gradient(90deg, #8c6a5b, #a6785b);
+        color: #fff5f0;
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+        flex-wrap: wrap;
+        border-top: 3px solid #ddb7a0;
+        margin-top: 60px;
+      }
+      .footer-info h2 {
+        font-size: 22px;
+        margin-bottom: 15px;
+        color: #fff5f0;
+      }
+      .footer p {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin: 5px 0;
+        font-size: 16px;
+      }
+    @media (max-width: 900px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      nav {
+        margin-top: 0.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+      }
+      .cards {
+        grid-template-columns: 1fr;
+      }
+      .hero h1 {
+        font-size: 1.5rem;
+      }
+    }

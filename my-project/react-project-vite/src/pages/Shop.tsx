@@ -1,6 +1,7 @@
+import "./Shop.css";
 import React from "react";
 import CardItem from "../pages/CardItem";
-import "./Shop.css";
+import "../style/Shop.css";
 
 const products = [
   {

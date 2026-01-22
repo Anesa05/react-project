@@ -1,18 +1,19 @@
-import Navbar from "./components/Navbar"
-import Hero from "./components/Hero"
-import Services from "./components/Services"
-import Footer from "./components/Footer"
-import "./index.css"
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import AdoptPet from "./pages/AdoptPet";
+import Register from "./pages/Regjistrimi";
+import Shop from "./pages/Shop";
 
-function App() {
+const App: React.FC = () => {
   return (
-    <>
-      <Navbar />
-      <Hero />
-      <Services />
-      <Footer />
-    </>
-  )
-}
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/adopt" element={<AdoptPet />} />
+      <Route path="/register" element={<Register />} />
+      <Route path="/shop" element={<Shop />} />
+    </Routes>
+  );
+};
 
-export default App
+export default App;
