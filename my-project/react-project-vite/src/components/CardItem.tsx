@@ -8,12 +8,11 @@ interface CardItemProps {
 
 const CardItem: React.FC<CardItemProps> = ({ imgSrc, title, description }) => {
   return (
-    <article className="card">
+    <div className="card">
       <img src={imgSrc} alt={title} />
       <h3>{title}</h3>
       <p>{description}</p>
-      <button>Add to Cart</button>
-    </article>
+    </div>
   );
 };
 
